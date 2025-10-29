@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+.about {
+
+    min-height: 100vh;
+    padding-top: 0px; /* keeps below navbar */
+    background-color: var(--meadow-green);
+    color: white;
+    /* text-transform: uppercase; */
+    align-items: center;
+    justify-content: center;
+    font-family: "futura", sans-serif;
+    border-top: 1px solid white;
+    
+}
+
+.about .scroll{
+    border-bottom: 1px solid white; /* full-width bottom line */
+    padding: 10px 0; /* vertical space above/below text */
+    font-size: 2rem;
+    text-align: center; /* centers text inside */
+    /* position: relative; */
+    width: 100%; /* make it span the full container width */
+    display: block; /* ensures the width applies */
+}
+
+footer{
+    background-color: var(--meadow-green);
+    color: white;
+    border-bottom: 1px solid white; /* full-width bottom line */
+    border-top: 1px solid white; /* full-width bottom line */
+    padding: 10px 0; /* vertical space above/below text */
+
+    font-size: 2rem;
+    text-align: right;
+    /* position: relative; */
+    width: 100%; 
+    display: block; 
+    font-family: "spalla", sans-serif;
+    border-top: 1px solid white;
+    text-transform: uppercase;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2emk
+}
+.scroll div{
+    display: flex;
+    gap: 2em;
+}
+.line2-break {
+    padding-top: 100;
+}
+.title {
+    font-family: "spalla", "san-serif";
+    animation: title 30s infinite linear;
+}
+
+@keyframes title {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.foot{
+    padding-right: 10px;
+}
+.about .scroll{
+    font-size: 30px;
+}
+
+.about .container {
+    display:flex;
+    padding:  60px 100px;
+    opacity: 0.8;
+
+    /* border: 1px solid white; */
+
+    /* width: 90%; */
+    /* max-width: 1200px; */
+}
+
+
+.about .row {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* lets it stack on smaller screens */
+    gap: 40px;
+}
+
+.about .col1 {
+    /* flex: 1 1 300px; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.about .col2 {
+    flex: 2 1 400px;
+}
+
+.about .col2 h1 {
+    font-family: "futura", sans-serif;
+    font-size: 60px;
+    /* margin-bottom: 20px; */
+}
+
+.about-info  {
+    font-size: 16px;
+    font-family: "futura", sans-serif;
+    /* text-transform: uppercase; */
+    color: white;
+    /* position: absolute; */
+    /* bottom: 10%; */
+    align-content: end;
+    right: 20px;
+    text-align: justify;
+    z-index: 2; 
+    /* opacity: 0.9; */
+    margin: 0;
+    /* pointer-events: none; */
+    max-width: 45%; 
+    white-space: normal; /* ensure wrapping is allowed */
+    word-wrap: break-word;
+    
+}
+
+.about-info p {
+    margin-bottom: 20px;
+    /* opacity: 0.9; */
+    /* min-width: 300px;  */
+}
+
+
+
+
+.resume-container {
+    display: flex;                 /* puts children side by side */
+    justify-content: space-between;/* adds space between them */
+    align-items: flex-start;       /* align to top */
+    gap: 40px;                     /* space between columns */
+    flex-wrap: wrap;               /* stack vertically on small screens */
+    /* padding: 40px; */
+    text-align: left;
+    max-width: 100%;
+    font-family: "futura-100", sans-serif;
+
+}
+.text3{
+    min-width: 300px;
+    font-family: "futura-100", sans-serif;
+}
+.column {
+    flex: 1;                       /* each takes equal width */
+    min-width: 300px;              /* prevents being too narrow */
+    color: white;
+    font-family: "futura-100", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    border-radius: 20px;
+    padding: 9px 9px;
+  /* border-bottom: 1px solid white; */
+}
+
+
+h2{
+  /* margin-top: 30px; */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 1;
+  font-family: "futura-100", sans-serif;
+  border-bottom:1px solid white;
+}
+
+.position, .degree {
+    font-weight: bold;
+}
+
+
+.position .years{
+    font-weight: normal;
+}
+
+.resume-container button {
+    font-family: "futura-100", "san-serif";
+    font-weight: bold;
+    padding: 9px 25px;
+    background-color: rgb(159, 184, 159);
+    color: var(--meadow-green);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    /* transition setup */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-container button:hover {
+    background-color:var(--light-grey);
+    color: var(--meadow-green);
+    transform: scale(1.05);
+
+}
+
+.skills {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: var(--meadow-green);
+    background-color: rgb(159, 184, 159);
+    border-radius: 20px;
+    padding: 9px 25px;
+    /* opacity: 1; */
+    font-weight: bold;
+    max-width: fit-content;
+    font-size: 15px;
+    
+    /* text-align: center; */
+    
+}
+
+
+
+.column:hover{
+    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    background-color:#107645;
+    opacity: 1;
+}
+
+.text3 {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    padding: 9px 9px;
+}
+
+.text3:hover {
+    transform: scale(1.05);
+    background-color:#107645;
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+.line-break {
+    display: block;
+    height: 0px;
+}
+.creative{
+    font-family: "spalla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.words{
+    font-family: "spalla", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /* transform: scaleY(1.5); */
+}
+
+.intro {
+    display: flex;
+    height: calc(100vh - 157px);
+    /* overflow: hidden; */
+    padding: 0 100px 80px;
+    background-color: var(--meadow-green);
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.bg-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+    opacity: 0.2;
+}
+.intro .container {
+    display: flex;
+    justify-content: space-between; /* push left/right apart */
+    align-items: flex-end;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    width: 100%;
+    z-index: 2;
+    pointer-events: none; /* so iframe still interactive */
+    color: white;
+}
+.and {
+    font-size: 50px;
+}
+
+
+
+.intro-text1{
+    /* margin-top: auto;  
+    margin-bottom: auto;  */
+    font-size: 80px;
+    font-family: "spalla", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    /* position: absolute; */
+    bottom: 10%;
+    left: 20px;
+    z-index: 2; 
+    opacity: 1;
+    margin: 0;
+    pointer-events: none;
+}
+
+
+.intro-text2 {
+    font-size: 25px;
+    font-family: "futura-100", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    /* position: absolute; */
+    bottom: 10%;
+    align-content: end;
+    right: 20px;
+    text-align: justify;
+    z-index: 2; 
+    opacity: 1;
+    margin: 0;
+    pointer-events: none;
+    max-width: 600px; /* set limit */
+    white-space: normal; /* ensure wrapping is allowed */
+    word-wrap: break-word;
+}
+
+.intro-text1 h1{
+    font-size: 60px;
+    /* margin-top: 20px; */
+    text-transform: none;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start; /* stack vertically */
+    }
+    .intro-text1,
+    .intro-text2 {
+       
+        text-align: left;
+    }
+}

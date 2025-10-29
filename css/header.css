@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--meadow-green);
+    height: 100px;
+    z-index: 1000;      /* increase z-index so it stays on top */
+    position: fixed;     /* makes the navbar fixed */
+    top: 0;              /* position at top */
+    left: 0;
+    width: 100%;         /* full width */
+    border-bottom: 1px solid white;
+}
+section{
+    /* display: flex; */
+    justify-content: center; 
+    align-items: center; 
+    /* padding: 0 100px; */
+    box-sizing: border-box;
+}
+body {
+    padding-top: 100px;
+}
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+}
+
+.logo {
+    max-height: 100px;
+    cursor: pointer;
+}
+
+
+.name{
+    font-family: "spalla", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    /* text-transform: uppercase; */
+    font-size: 25px;
+    color: #edf0f1;
+}
+
+li, a, button {
+    font-family: "spalla", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+
+
+.links{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 30px;
+
+}
+
+.links li a:hover {
+    color: var(--mustard-green);
+    text-decoration: line-through;
+
+}
+
+.cta button{
+    padding: 9px 25px;
+    background-color: var(--mustard-green);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.cta button:hover {
+    background-color:var(--light-grey);
+    color: var(--meadow-green);
+}
+
+
