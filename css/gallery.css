@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+
+
+.gallery-block {
+    position: relative;
+    min-height: 85vh; /* keeps the page tall enough for center alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--meadow-green);
+
+}
+
+.wip {
+    font-family: "spalla", "san-serif";
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    padding: 20px 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

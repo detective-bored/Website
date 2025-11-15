@@ -110,11 +110,7 @@ footer{
     flex: 2 1 400px;
 }
 
-.about .col2 h1 {
-    font-family: "futura", sans-serif;
-    font-size: 60px;
-    /* margin-bottom: 20px; */
-}
+
 
 .about-info  {
     font-size: 16px;
@@ -146,13 +142,13 @@ footer{
 
 
 .resume-container {
-    display: flex;                 /* puts children side by side */
+    display: grid;                 /* puts children side by side */
+    grid-template-columns: repeat(2,  1fr);
     justify-content: space-between;/* adds space between them */
-    align-items: flex-start;       /* align to top */
-    gap: 40px;                     /* space between columns */
-    flex-wrap: wrap;               /* stack vertically on small screens */
-    /* padding: 40px; */
+    gap: 40px;
+    align-items: flex-start;
     text-align: left;
+    font-family: "futura-100", sans-serif;
     max-width: 100%;
     font-family: "futura-100", sans-serif;
 
@@ -207,7 +203,7 @@ h2{
     font-size: 15px;
     margin-top: 10px;
     cursor: pointer;
-
+    columns: 2;
     /* transition setup */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
@@ -241,7 +237,6 @@ h2{
 
 .column:hover{
     transform: scale(1.05);
-    /* transform: scale(1.05); */
     background-color:#107645;
     opacity: 1;
 }
@@ -255,4 +250,27 @@ h2{
 .text3:hover {
     transform: scale(1.05);
     background-color:#107645;
+}
+
+@media (max-width: 900px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+  .position{
+
+  }
+  .skills{
+    font-size: 13px;
+
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .about-info  {
+    font-size: 14px;
+}
+
+.resume-container button {
+    font-size: 13px;
+}
 }

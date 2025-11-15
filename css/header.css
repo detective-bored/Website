@@ -16,7 +16,7 @@ header {
     align-items: center;
     padding: 20px 20px;
     background-color: var(--meadow-green);
-    height: 100px;
+    height: 80px;
     z-index: 1000;      /* increase z-index so it stays on top */
     position: fixed;     /* makes the navbar fixed */
     top: 0;              /* position at top */
@@ -32,7 +32,7 @@ section{
     box-sizing: border-box;
 }
 body {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 :root {
     --meadow-green: #0C6038; /* Blue */
@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 80px;
     cursor: pointer;
 }
 
@@ -121,4 +121,14 @@ li, a, button {
     color: var(--meadow-green);
 }
 
-
+@media (max-width: 900px) {
+    .links li a {
+    font-size: 20px;
+}
+.cta button{
+    font-size: 20px;
+}
+.links li{
+    padding: 0px 5px;
+}
+}

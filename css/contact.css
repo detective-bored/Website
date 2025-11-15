@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+
+.contact-block {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--meadow-green);
+}
+
+.contact-card {
+    /* background: rgba(255, 255, 255, 0.08); */
+    border: 1px solid white;
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 40px 50px;
+    text-align: center;
+    max-width: 450px;
+}
+
+.contact-card h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.contact-card p {
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-btn {
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.25s ease;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}

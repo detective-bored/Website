@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,500;1,500&family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/obh3smd.css");
+
+:root {
+    --meadow-green: #0C6038; /* Blue */
+    --mustard-green: #808847; /* Gray */
+    --light-grey: #d5d3cc;
+}
+
+.project-block{
+    min-height: 100vh;
+    background-color: var(--meadow-green);
+}
+
+.pskills{
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: var(--meadow-green);
+    background-color: rgb(159, 184, 159);
+    border-radius: 20px;
+    padding: 9px 25px;
+    /* opacity: 1; */
+    font-weight: bold;
+    max-width: fit-content;
+    font-size: 15px;
+    
+    /* text-align: center; */
+    
+}
+
+.prof_des{
+    justify-content: space-between;/* adds space between them */
+    gap: 40px;
+    align-items: flex-start;
+    text-align: left;
+    font-family: "futura-100", sans-serif;
+    max-width: 100%;
+    font-family: "futura-100", sans-serif;
+
+}
+
+.odd{
+    font-size: 1.2rem;
+    font-family: "futura-100", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    padding: 30px 40px;
+    border-radius: 20px;
+    justify-content: space-between;   
+    border-bottom: 1px solid white;
+
+}
+
+.odd:hover{
+    transform: scale(1.01);
+    background-color:#107645;
+    opacity: 1;
+}
+
+.even{
+    font-size: 1.2rem;
+    font-family: "futura-100", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    opacity: 0.8;
+    color: white;
+    /* display: flex; */
+    padding: 20px 50px;
+    border-radius: 20px;
+    justify-content: left;
+
+}
+
+
+.even:hover{
+    transform: scale(1.03);
+    background-color:#107645;
+}
+
+.pskills:hover{
+    background-color:var(--light-grey);
+    color: var(--meadow-green);
+    transform: scale(1.05);
+}
+
+.odd,
+.even,
+.proj_image {
+  transition: all 0.4s ease-in-out; /* smooth everything: flex, size, spacing */
+}
+.proj_image {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+  /* gap: 20px; */
+  transition: all 0.4s ease-in-out;
+}
+
+.img_format {
+  width: auto;
+  max-width: 200px; /* nice size on large screens */
+  height: auto;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  vertical-align: middle;
+}
+
+.img_format:hover{
+  transform: scale(1.1);
+}
+
+/* Tablet adjustments */
+/* @media (max-width: 1024px) {
+  .img_format {
+    max-width: 350px; 
+  }
+  .proj_info {
+    max-width: 55%;
+  }
+} */
+
+/* Mobile layout */
+@media (max-width: 1250px) {
+  .odd,
+  .even {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .proj_image {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .img_format {
+    width: 60%; /* full width for mobile */
+    max-width: 300px;
+    /* margin: 20px; */
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
