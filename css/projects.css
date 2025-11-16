@@ -110,6 +110,7 @@
   padding: 10px;
   transition: all 0.4s ease-in-out;
   vertical-align: middle;
+  /* border: 1px solid white; */
 }
 
 .img_format:hover{
