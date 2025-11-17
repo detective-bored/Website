@@ -170,8 +170,8 @@ footer{
 
 
 h2{
-  /* margin-top: 30px; */
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
   text-transform: uppercase;
   opacity: 1;
@@ -273,5 +273,5 @@ h2{
 }
 
 .side {
-    max-width: 100vw;
+    max-width: 80vw;
 }

@@ -81,7 +81,8 @@
 
 .intro-text2 {
     font-size: 25px;
-    font-family: "futura-100", sans-serif;
+    font-family: "inter-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 400;
     text-transform: uppercase;
     color: white;
     /* position: absolute; */
